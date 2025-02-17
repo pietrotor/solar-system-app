@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     title: "Sistema Solar Interactivo",
     description:
       "Explora el sistema solar con nuestra aplicación interactiva. Aprende sobre los planetas, el sol y otros cuerpos celestes.",
-    url: "https://tusitio.com",
+    url: "https://solar-system-app-tau.vercel.app",
     siteName: "Sistema Solar Interactivo",
     images: [
       {
-        url: "https://tusitio.com/imagen-de-sistema-solar.jpg",
+        url: "https://solar-system-app-tau.vercel.app/assets/mars.webp",
         width: 1200,
         height: 630,
         alt: "Imagen del sistema solar",
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${orbitron.variable} h-screen bg-fixed antialiased bg-[url(https://img2.wallspic.com/crops/3/9/9/2/4/142993/142993-calm-black-electric_blue-atmosphere-space-4000x3000.jpg)] bg-cover bg-no-repeat relative`}
+        className={`${orbitron.variable} h-screen bg-fixed antialiased bg-[url(/assets/background-image.jpg)] bg-cover bg-no-repeat relative`}
       >
         <div className="fixed inset-0 bg-black/40 -z-10 w-full h-full"></div>
         {children}
