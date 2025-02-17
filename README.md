@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistema Solar - Aplicación Web
 
-## Getting Started
+Esta es una aplicación web interactiva del Sistema Solar, desarrollada con **Next.js 15**, **Tailwind CSS** para los estilos, y **Zustand** para el manejo del estado en el **localStorage**. La aplicación hace uso de una API propia para obtener los datos sobre los planetas y sus características.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Visualización interactiva de los planetas del sistema solar.
+- Información detallada sobre cada planeta (tamaño, distancia al sol, etc.).
+- Uso de Zustand para mantener el estado de los datos y almacenarlos en el **localStorage** para persistencia.
+- Estilos modernos y responsivos con **Tailwind CSS**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requisitos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Antes de ejecutar la aplicación, asegúrate de tener instalados los siguientes programas:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Node.js** (v16 o superior)
+- **npm** o **yarn**
 
-## Learn More
+## Instalación
 
-To learn more about Next.js, take a look at the following resources:
+1. Clona el repositorio a tu máquina local:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/tu_usuario/solar-system-app.git
+   cd solar-system-app
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Instala las dependencias
+   ```bash
+   npm install
+   ```
+3. usa npm para iniciar el proyecto
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+## Uso
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+La aplicación te permite explorar el sistema solar y obtener información sobre los planetas. Los datos son obtenidos desde la API que has creado:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **API base**: [https://api-solar-system.fly.dev/api](https://api-solar-system.fly.dev/api)
+
+Los datos se almacenan localmente para mejorar la experiencia del usuario.
+
+### Características de la UI:
+
+- Puedes ver una lista de planetas en una vista general.
+- Al hacer clic en un planeta, se muestran detalles adicionales sobre ese planeta.
+- Los datos se cargan de forma dinámica desde la API, y el estado se guarda en el **localStorage** gracias a **Zustand**.
+
+## Tecnologías
+
+- **Next.js 15**: Framework de React para renderizado del lado del servidor y generación estática.
+- **Tailwind CSS**: Framework de diseño de CSS para un desarrollo rápido y flexible.
+- **Zustand**: Librería para el manejo del estado de forma sencilla y eficiente.
+- **API propia**: [https://api-solar-system.fly.dev/api](https://api-solar-system.fly.dev/api) para proporcionar datos del sistema solar.
