@@ -6,13 +6,13 @@ import { PlanetDetailAnimation } from "@/components/PlanetDetail/PlanetDetailAni
 import { Metadata } from "next";
 
 interface Props {
-  params: {
+  params: Promise<{
     name: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const name = params.name;
+  const { name } = await params;
 
   const planet = await getPlanetByName({ name });
 
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function PlanetDetailPage({ params }: Props) {
-  const { name } = params;
+  const { name } = await params;
   const { error, response: planet } = await getPlanetByName({ name });
 
   if (error || !planet) {
