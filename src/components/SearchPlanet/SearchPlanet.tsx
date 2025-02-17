@@ -38,7 +38,7 @@ export const SearchPlanet = () => {
     updateSearchParams({
       ...allSearchParams,
       filter: querySearchParam,
-      page: null,
+      ...(querySearchParam && { page: null }),
     });
   }, [querySearchParam]);
 
