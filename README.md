@@ -19,7 +19,7 @@ Antes de ejecutar la aplicación, asegúrate de tener instalados los siguientes 
 1. Clona el repositorio a tu máquina local:
 
    ```bash
-   git clone https://github.com/tu_usuario/solar-system-app.git
+   git clone https://github.com/pietrotor/solar-system-app.git
    cd solar-system-app
    ```
 
@@ -49,4 +49,4 @@ La aplicación te permite explorar el sistema solar y obtener información sobre
 - **Next.js 15**: Framework de React para renderizado del lado del servidor y generación estática, permitiendo un buen posicionamiento SEO y mejorando la eficiencia de uso de las request al servidor.
 - **Tailwind CSS**: Framework de diseño de CSS para un desarrollo rápido y flexible.
 - **Zustand**: Librería para el manejo del estado de forma sencilla y eficiente.
-- **API propia**: [https://api-solar-system.fly.dev/api](https://api-solar-system.fly.dev/api) para proporcionar datos del sistema solar.
+- **API propia**: [https://api-solar-system.fly.dev/api](https://api-solar-system.fly.dev/api) para proporcionar datos del sistema solar, con su [repositorio](https://github.com/pietrotor/api-solar-sytem).
