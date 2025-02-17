@@ -37,7 +37,7 @@ export default async function PlanetDetailPage({ params }: Props) {
 
   return (
     <PlanetDetailAnimation>
-      <PageContainer className="grid md:grid-cols-2 gap-9 md:h-screen items-center">
+      <PageContainer className="grid md:grid-cols-2 gap-9 md:h-screen py-4 items-center">
         <PlanetDetail planet={planet} />
       </PageContainer>
     </PlanetDetailAnimation>

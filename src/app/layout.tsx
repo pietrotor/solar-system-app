@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${orbitron.variable} h-screen bg-fixed antialiased bg-[url(/assets/background-image.jpg)] bg-cover bg-no-repeat relative`}
+        className={`${orbitron.variable} h-[100dvh] bg-fixed antialiased bg-[url(/assets/background-image.jpg)] bg-cover bg-no-repeat relative`}
       >
         <div className="fixed inset-0 bg-black/40 -z-10 w-full h-full"></div>
         {children}
